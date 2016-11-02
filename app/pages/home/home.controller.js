@@ -3,7 +3,7 @@
     'use strict';
 
     var homeController = function ($state) {
-        console.log($state);
+
     };
 
 
