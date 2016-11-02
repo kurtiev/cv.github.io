@@ -4,13 +4,14 @@
 
     function config($stateProvider, $urlRouterProvider) {
 
-        $urlRouterProvider.otherwise("/projects");
+        $urlRouterProvider.otherwise("/home");
 
 
         $stateProvider
-            .state('projects', {
-                url: "/projects",
-                template: "<projects></projects>"
+            .state('home', {
+                controller: 'homeController',
+                url: "/home",
+                templateUrl: "app/pages/home/template.html"
             });
 
     }

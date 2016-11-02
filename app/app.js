@@ -1,20 +1,29 @@
 (function () {
 
-    'use strict';
+    var appConfig = {
+        googleCaptcha: ''
+    };
 
-    var conts = {};
+    var config = function () {
+
+    };
+
+    config.$inject = [];
 
     angular.module('app', [
+        // Main
         'app.controllers',
         'app.directives',
         'app.services',
         'app.filters',
 
+        // Thirty part
         'ui.router'
     ])
-        .constant(conts)
+        .constant('appConfig', appConfig)
+        .config(config)
         .run(function () {
-            console.log('run')
+
         });
 
     angular.module('app.controllers', []);
