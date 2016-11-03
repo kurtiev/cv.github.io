@@ -3,7 +3,6 @@
     'use strict';
 
     var link = function (scope, element, attrs) {
-        console.log('wefew')
     };
 
     var navigation = function () {
