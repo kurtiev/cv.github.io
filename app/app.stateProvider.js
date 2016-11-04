@@ -11,8 +11,13 @@
             .state('home', {
                 controller: 'homeController',
                 url: "/home",
-                templateUrl: "app/pages/home/template.html"
-            });
+                templateUrl: "app/pages/home/view.html"
+            })
+            .state('projects', {
+                controller: 'projectsController',
+                url: "/projects",
+                templateUrl: "app/pages/projects/view.html"
+            })
 
     }
 

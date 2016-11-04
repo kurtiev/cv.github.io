@@ -18,7 +18,8 @@
         'app.filters',
 
         // Thirty part
-        'ui.router'
+        'ui.router',
+        'ngSanitize'
     ])
         .constant('appConfig', appConfig)
         .config(config)

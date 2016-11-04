@@ -18,3 +18,16 @@ canvas {
 .jumbotron h1.cv_title {
     font-size: 40px;
 }
+
+.thumbnail-custom {
+    padding: 20px 4px;
+}
+
+.thumbnail > .projects-logos {
+    max-width: 150px;
+}
+
+.grid-item {
+    width: 360px;
+    padding: 0 10px;
+}

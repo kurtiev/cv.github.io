@@ -2,12 +2,12 @@
 
     'use strict';
 
-    var homeController = function ($state) {
+    var homeController = function ($scope) {
 
     };
 
 
-    homeController.$inject = ['$state'];
+    homeController.$inject = ['$scope'];
 
 
     angular.module('app.controllers').controller('homeController', homeController);
