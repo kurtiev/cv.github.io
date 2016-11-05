@@ -2,17 +2,19 @@
 
     'use strict';
 
-    var projectsController = function ($scope, $sce) {
+    var projectsController = function ($scope, $sce, $timeout) {
 
         var returnAsTrust = function (str) {
             return $sce.trustAsHtml(str || '');
         };
 
         $scope.runMasonry = function (last) {
-            $('.grid').masonry({
-                itemSelector: '.grid-item',
-                columnWidth: 360
-            });
+            $timeout(function () {
+                $('.grid').masonry({
+                    itemSelector: '.grid-item',
+                    columnWidth: 360
+                });
+            }, 100);
         };
 
 
@@ -84,7 +86,7 @@
     };
 
 
-    projectsController.$inject = ['$scope', '$sce'];
+    projectsController.$inject = ['$scope', '$sce', '$timeout'];
 
 
     angular.module('app.controllers').controller('projectsController', projectsController);
