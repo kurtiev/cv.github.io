@@ -1,10 +1,9 @@
-<div id="particles-js" class="particles-js" canvas-background></div>
 <div class="container">
     <navigation></navigation>
 
     <div class="row">
         <div class="grid">
-            <div class="grid-item" data-ng-repeat="project in projects" ng-init="runMasonry($last)">
+            <div class="grid-item" data-ng-repeat="project in projects">
                 <div class="thumbnail thumbnail-custom">
                     <img src="" alt="" data-ng-src="{{project.thumb}}" data-ng-show="project.thumb" class="projects-logos">
                     <img src="asset/images/icon-view-no-navy.png" alt="" width="40" data-ng-show="!project.thumb">
@@ -12,8 +11,9 @@
                         <h3>{{project.name}}</h3>
                         <p ng-bind-html="project.description"></p>
                         <p>
-                            <a href="" data-ng-show="project.url" data-ng-href="{{project.url}}" target="_blank" class="btn btn-primary" role="button">View</a>
+                            <a href="" data-ng-show="project.url" data-ng-href="{{project.url}}" target="_blank" class="btn btn-success" role="button">View</a>
                         </p>
+                        {{$last ? runMasonry() : ''}}
                     </div>
                 </div>
             </div>

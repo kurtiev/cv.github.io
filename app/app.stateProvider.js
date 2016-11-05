@@ -18,6 +18,11 @@
                 url: "/projects",
                 templateUrl: "app/pages/projects/view.html"
             })
+            .state('contact', {
+                controller: 'contactController',
+                url: "/contact",
+                templateUrl: "app/pages/contact/view.html"
+            })
 
     }
 

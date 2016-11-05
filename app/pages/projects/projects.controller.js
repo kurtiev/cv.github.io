@@ -9,16 +9,11 @@
         };
 
         $scope.runMasonry = function (last) {
-            if (last) {
-                setTimeout(function () {
-                    $('.grid').masonry({
-                        itemSelector: '.grid-item',
-                        columnWidth: 360
-                    });
-                }, 100);
-            }
+            $('.grid').masonry({
+                itemSelector: '.grid-item',
+                columnWidth: 360
+            });
         };
-
 
 
         $scope.projects = [
@@ -53,6 +48,37 @@
                     '<b>Role:</b> Development front-end part as solo developer. Architect.'),
                 thumb: 'asset/images/projects/plsplsme.png',
                 url: 'https://admin.plsplsme.com/#/login'
+            },
+            {
+                name: 'TransparencyСentral',
+                description: returnAsTrust('Alternative service for <a href="https://www.kickstarter.com/" target="_blank">kickstarter</a>' +
+                    '<br><b>Technologies:</b> PHP5, MySQL, AngularJS <br>' +
+                    '<b>Role:</b> Development front-end part as solo developer. Architect.'),
+                thumb: 'asset/images/projects/TransparencyCentral.svg',
+                url: 'http://transparencycentral.com/'
+            },
+            {
+                name: 'OffrBox',
+                description: returnAsTrust('Buy and Sell Your Residential Investment Properties Online.' +
+                    '<br><b>Technologies:</b> NodeJS, MySQL, AngularJS <br>' +
+                    '<b>Role:</b> Development front-end part for main site in a team. Development front-end part for Admin Panel, architect.'),
+                thumb: 'asset/images/projects/offrbox.png',
+                url: 'https://offrbox.com/'
+            },
+            {
+                name: 'CSI CRM',
+                description: returnAsTrust('CSI is a proud member of  <a href="http://www.moving.org/" target="_blank">AMSA</a>' +
+                    '<br><b>Technologies:</b> NodeJS, MySQL, AngularJS <br>' +
+                    '<b>Role:</b> Development front-end part for Customers, Carriers and Admin Panel, architect.'),
+                thumb: 'asset/images/projects/csi.png',
+                url: 'http://csipros.org/'
+            },
+            {
+                name: 'Other',
+                description: returnAsTrust('<b>Technologies:</b> PHP, MySQL, AngularJS etc.<br>' +
+                    '<b>Role:</b> Development of different short-term projects '),
+                thumb: '',
+                url: ''
             }
         ]
     };
